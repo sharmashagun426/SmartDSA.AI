@@ -74,7 +74,7 @@ async function getAIResponse(prompt) {
 
     try {
 
-        const response = await fetch("/chat", {
+        const response = await fetch("https://smartdsa.onrender.com/chat", {
 
             method: "POST",
 
