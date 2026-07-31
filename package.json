@@ -1,0 +1,33 @@
+{
+  "name": "dsa_instructor",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This is Data Structure AI chat boat that help to lean DSA.",
+  "main": "server.js",
+"scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharmashagun426/AI-DSA_Instructor.git"
+  },
+  "keywords": [
+    "AI-DSA"
+  ],
+  "author": "Shagun Vashisth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharmashagun426/AI-DSA_Instructor/issues"
+  },
+  "homepage": "https://github.com/sharmashagun426/AI-DSA_Instructor#readme",
+  "dependencies": {
+    "@google/genai": "^2.15.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

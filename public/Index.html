@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart DSA AI</title>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Highlight.js -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="app-container">
+
+        <nav class="glass-nav">
+
+            <div class="logo">
+                <div class="ai-avatar pulse">
+                    <img src="./logo/logo.png" alt="smartDSA AI Logo">
+                </div>
+
+                <span class="logo-text">
+                    <span class="logo-ai">S</span><span class="logo-smart">mart</span><span class="logo-dsa">DSA</span><span class="logo-ai">.AI</span>
+                </span>
+            </div>
+            <div class="suggestions-bar" id="suggestions">
+
+                <span class="chip" data-query="Explain Time Complexity">
+                    O(n) Intro
+                </span>
+
+                <span class="chip" data-query="How does Quick Sort work?">
+                    Quick Sort
+                </span>
+
+                <span class="chip" data-query="Explain Binary Search Trees">
+                    BST
+                </span>
+
+                <span class="chip" data-query="What is a Hash Map?">
+                    Hash Maps
+                </span>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button id="themeToggle" class="icon-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+            </div>
+
+        </nav>
+
+        <main class="chat-wrapper">
+
+
+
+            <div id="chatBox" class="chat-box">
+
+                <div class="message ai-msg">
+
+                    <p>
+                     I am SmartDSA, your AI-powered Data Structures and Algorithms instructor.
+
+                    Ask me anything related to DSA — concepts, algorithms, coding problems, optimization techniques, and interview preparation.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="input-container">
+
+                <div class="animated-border-box">
+
+                    <input id="userInput" type="text" placeholder="Ask about Arrays, Trees, Graphs..."
+                        autocomplete="off">
+
+                    <button id="sendBtn">
+
+                        <i class="fas fa-paper-plane"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
