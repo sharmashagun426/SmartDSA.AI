@@ -1,7 +1,7 @@
 # 🚀 SmartDSA.AI
 
 <p align="center">
-  <img src="./logo/logo.png" width="180" alt="SmartDSA Logo"/>
+  <img src="https://ibb.co/cK2BNZCk" width="180" alt="SmartDSA Logo"/>
 </p>
 
 <h3 align="center">
